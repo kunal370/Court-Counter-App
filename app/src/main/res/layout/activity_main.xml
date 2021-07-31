@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+
+        tools:context=".MainActivity">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/teama"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="team-a"
+
+                android:textSize="20sp"
+                android:textAllCaps="true"
+                android:padding="10dp"
+                android:gravity="center_horizontal"
+                />
+            <TextView
+                android:id="@+id/valueteama"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:padding="10dp"
+                android:textSize="56sp"
+                />
+            <Button
+                android:id="@+id/threeteama"
+                android:layout_width="match_parent"
+                android:layout_marginRight="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_height="wrap_content"
+                android:text="+3points"
+                android:onClick="threeteama"
+
+                android:layout_marginTop="8dp"
+                android:textAllCaps="true"
+                android:padding="10dp"
+                />
+            <Button
+                android:id="@+id/twoteama"
+                android:layout_width="match_parent"
+                android:layout_marginRight="24dp"
+                android:layout_marginLeft="24dp"
+                android:onClick="twoteama"
+                android:layout_height="wrap_content"
+                android:text="+2points"
+                android:padding="10dp"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:textAllCaps="true"/>
+
+            <Button
+                android:id="@+id/freeteama"
+                android:gravity="center_horizontal"
+                android:onClick="freeteama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:padding="10dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="24dp"
+                android:text="free throw "/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/teamb"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="team-b"
+                android:padding="10dp"
+                android:textSize="20dp"
+                android:textAllCaps="true"
+                android:gravity="center_horizontal"
+                />
+            <TextView
+                android:id="@+id/valueteamb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textSize="56sp"
+                android:padding="10dp"
+
+                />
+            <Button
+                android:id="@+id/threeteamb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+3points"
+                android:onClick="threeteamb"
+                android:layout_marginRight="24dp"
+                android:layout_marginLeft="24dp"
+                android:textAllCaps="true"
+                android:layout_marginTop="8dp"
+                android:padding="10dp"
+                />
+            <Button
+                android:id="@+id/twoteamb"
+                android:layout_width="match_parent"
+                android:onClick="twoteamb"
+                android:layout_height="wrap_content"
+                android:text="+2points"
+                android:padding="10dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:textAllCaps="true"/>
+
+            <Button
+                android:id="@+id/freeteamb"
+                android:gravity="center_horizontal"
+                android:onClick="freeteamb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:padding="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginLeft="24dp"
+                android:text="free throw "/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34dp"
+        android:onClick="reset"
+        android:padding="10dp"
+        android:text="reset"
+        android:textAllCaps="true" />
+
+
+</RelativeLayout>
+
